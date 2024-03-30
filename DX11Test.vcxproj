@@ -133,11 +133,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="HelloD3D11.cpp" />
     <ClCompile Include="HelloWindowApp.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
+    <ClInclude Include="HelloD3D11.hpp" />
     <ClInclude Include="HelloWindowApp.hpp" />
     <ClInclude Include="resource.h" />
   </ItemGroup>

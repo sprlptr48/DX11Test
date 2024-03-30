@@ -18,6 +18,17 @@ protected:
 	virtual bool Load() = 0;
 	virtual void Render() = 0;
 	virtual void Update() = 0;
+	static void HandleResize(
+		GLFWwindow* window,
+		const int32_t width,
+		const int32_t height);
+	virtual void OnResize(
+		const int32_t width,
+		const int32_t height);
+
+	[[nodiscard]] GLFWwindow* GetWindow() const;
+	[[nodiscard]] int32_t GetWindowWidth() const;
+	[[nodiscard]] int32_t GetWindowHeight() const;
 
 private:
 	GLFWwindow* _window = nullptr;
