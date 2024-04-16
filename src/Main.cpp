@@ -1,10 +1,9 @@
-#include "HelloWindowApp.hpp"
-#include "HiTriangle.hpp"
+#include "HelloD3D11.hpp"
 
 
 int main(int argc, char* argv[])
 {
-    HiTriangle dxwindow{ "DX11 Window!" };
+    HelloD3D11 dxwindow{"DX11 Window!"};
     dxwindow.Run();
     return 0;
 }
